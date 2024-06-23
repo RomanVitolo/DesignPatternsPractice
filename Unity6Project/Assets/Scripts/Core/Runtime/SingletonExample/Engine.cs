@@ -1,10 +1,10 @@
-using Singleton;
+using Core.Runtime.Singleton.Samples;
 using UnityEngine;         
 using UnityEngine.SceneManagement;
 
-namespace GameEngine
+namespace Core.Runtime.Singleton.Samples
 {
-    public class GameEngine : GenericSingleton<GameEngine>
+    public class Engine : GenericSingleton<Engine>
     {      
         public int score = 0;
         public int startingLevel = 1;

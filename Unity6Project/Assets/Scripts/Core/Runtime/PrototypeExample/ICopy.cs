@@ -1,7 +1,9 @@
-﻿namespace Core.Runtime.PrototypeExample.Samples
+﻿using UnityEngine;
+
+namespace Core.Runtime.PrototypeExample.Samples
 {
-    public class ICopy
+    public interface ICopy
     {
-        
+        public ICopy Copy(Transform parent);
     }
 }
