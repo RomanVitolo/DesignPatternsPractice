@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
         float horInput = Input.GetAxis("Vertical") * moveSpeed;
         float verInput = Input.GetAxis("Horizontal") * rotateSpeed;
 
-        this.transform.Translate(Vector3.forward * horInput * Time.deltaTime);
-        this.transform.Rotate(Vector3.up * verInput * Time.deltaTime);
+        this.transform.Translate(Vector3.forward * (horInput * Time.deltaTime));
+        this.transform.Rotate(Vector3.up * (verInput * Time.deltaTime));
     }
 }
